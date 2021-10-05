@@ -1,0 +1,27 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "rekognition-dev",
+    "description": "Created automatically by Zappa.",
+    "version": "2021-10-05T18:17:15Z"
+  },
+  "servers": [
+    {
+      "url": "https://d15vt77p79.execute-api.us-west-2.amazonaws.com/{basePath}",
+      "variables": {
+        "basePath": {
+          "default": "/dev"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/{proxy+}": {
+      "x-amazon-apigateway-any-method": {}
+    },
+    "/": {
+      "x-amazon-apigateway-any-method": {}
+    }
+  },
+  "components": {}
+}
