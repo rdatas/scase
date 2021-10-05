@@ -1,0 +1,18 @@
+{
+    "dev": {
+        "app_function": "app.app",
+        "aws_region": "us-west-2",
+        "profile_name": "default",
+        "project_name": "rekog",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-xuu3280b3"
+    }
+	"stage": {
+        "app_function": "app.app",
+        "aws_region": "us-west-2",
+        "profile_name": "default",
+        "project_name": "rekog",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-xuu3280b3"
+    }
+}
