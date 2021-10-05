@@ -12,7 +12,6 @@ UPLOAD_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 
 
-filename = "Capture.JPG"
 
 @app.route("/")
 def home():
@@ -33,11 +32,9 @@ def upload():
                 return "Invalid image", 400
         f.save(os.path.join(UPLOAD_FOLDER, secure_filename(f.filename)))
         upload_file(f"{UPLOAD_FOLDER}/{f.filename}", BUCKET)
-        #labels = detect_labels(f"{UPLOAD_FOLDER}/{f.filename}", BUCKET)
-        #return labels
-        #return render_template('collection.html', contents=labels)
-    #return redirect(url_for('index.html'))
-        return redirect("/") 
+        labels = detect_labels(f"{UPLOAD_FOLDER}/{f.filename}", BUCKET)
+        return labels
+       
             
         
 @app.route("/pics")
